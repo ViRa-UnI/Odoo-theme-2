@@ -1,0 +1,91 @@
+```scss
+$header-height: 60px;
+
+// Define color variables
+$primary-bg-color: #000;
+$secondary-bg-color: #333;
+$neon-blue: #00f;
+$neon-green: #0f0;
+$neon-pink: #f0f;
+
+.header {
+  background-color: $primary-bg-color;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .logo {
+    img {
+      height: 40px;
+    }
+  }
+
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    border: 2px solid $neon-blue;
+    transition: border 0.3s ease;
+
+    &:focus-within {
+      border-color: $neon-green;
+    }
+
+    input {
+      background-color: transparent;
+      color: $neon-blue;
+      border: none;
+      padding: 5px;
+      width: 100%;
+
+      &::placeholder {
+        color: $neon-blue;
+      }
+    }
+  }
+
+  .user-cart-icons {
+    display: flex;
+    gap: 10px;
+
+    i {
+      color: $neon-blue;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $neon-green;
+      }
+    }
+  }
+}
+
+.main-navigation {
+  background-color: $secondary-bg-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  .nav-item {
+    color: $neon-blue;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $neon-green;
+      text-decoration: underline;
+    }
+
+    &.dropdown {
+      position: relative;
+
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $primary-bg-color;
+        color: $neon-blue;
+      }
+    }
+  }
+}
+```

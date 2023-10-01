@@ -1,0 +1,33 @@
+```scss
+// Footer Styles
+.footer {
+  background-color: var(--primary-bg-color);
+  color: var(--neon-blue);
+  padding: 20px 0;
+  text-align: center;
+
+  a {
+    color: var(--neon-green);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--neon-pink);
+    }
+  }
+
+  .social-icons {
+    margin: 20px 0;
+
+    i {
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--neon-pink);
+      }
+    }
+  }
+}
+```
