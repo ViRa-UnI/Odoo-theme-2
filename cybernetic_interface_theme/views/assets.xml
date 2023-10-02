@@ -1,0 +1,24 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="assets_frontend" name="cybernetic_interface_theme assets" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+            <!-- CSS -->
+            <link rel="stylesheet" type="text/scss" href="/cybernetic_interface_theme/static/src/_header.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/cybernetic_interface_theme/static/src/_footer.scss"/>
+            <!-- JS -->
+            <!-- Add your JS files here -->
+        </xpath>
+    </template>
+
+    <template id="assets_backend" name="cybernetic_interface_theme assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <!-- CSS -->
+            <link rel="stylesheet" type="text/scss" href="/cybernetic_interface_theme/static/src/_header.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/cybernetic_interface_theme/static/src/_footer.scss"/>
+            <!-- JS -->
+            <!-- Add your JS files here -->
+        </xpath>
+    </template>
+</odoo>
+```

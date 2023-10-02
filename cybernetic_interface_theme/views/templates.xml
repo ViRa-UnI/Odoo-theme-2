@@ -1,0 +1,42 @@
+```xml
+<odoo>
+    <data>
+        <!-- Main layout override -->
+        <template id="main_layout" inherit_id="website.layout">
+            <xpath expr="//header" position="replace">
+                <header>
+                    <div class="logo">
+                        <!-- Logo goes here -->
+                    </div>
+                    <div class="search-bar">
+                        <!-- Search bar goes here -->
+                    </div>
+                    <div class="user-cart-icons">
+                        <!-- User/Cart icons go here -->
+                    </div>
+                </header>
+            </xpath>
+            <xpath expr="//nav" position="replace">
+                <nav>
+                    <!-- Main navigation goes here -->
+                </nav>
+            </xpath>
+            <xpath expr="//footer" position="replace">
+                <footer>
+                    <!-- Footer goes here -->
+                </footer>
+            </xpath>
+        </template>
+
+        <!-- Product display -->
+        <template id="product_display" inherit_id="website_sale.products">
+            <!-- Grid snippets and Quick View feature go here -->
+        </template>
+
+        <!-- Custom blocks -->
+        <template id="custom_blocks">
+            <!-- Custom blocks like "Featured Products", "New Arrivals", and "User Reviews" go here -->
+        </template>
+    </data>
+</odoo>
+```
